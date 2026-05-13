@@ -139,43 +139,186 @@
                 <h2>Portfolio</h2>
                 <p>A glimpse at what we've built for our clients.</p>
             </div>
+
+            <!-- Filter Tabs -->
+            <div class="portfolio-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cv">CVs</button>
+                <button class="filter-btn" data-filter="website">Websites</button>
+                <button class="filter-btn" data-filter="ai">AI &amp; Automation</button>
+            </div>
+
             <div class="portfolio-grid">
 
-                <!-- CV Sample -->
-                <div class="portfolio-card reveal">
-                    <div class="portfolio-thumb cv-preview">
-                        <div class="cv-mock">
-                            <div class="cv-header">
-                                <div class="cv-avatar"></div>
-                                <div class="cv-title-lines">
-                                    <div class="cv-line thick"></div>
-                                    <div class="cv-line medium"></div>
+                <!-- ── CV 1: Software Engineer ── -->
+                <div class="portfolio-card reveal" data-category="cv">
+                    <div class="portfolio-thumb cv-preview cv-blue">
+                        <div class="cv-mock cv-mock-full">
+                            <div class="cv-sidebar">
+                                <div class="cv-avatar-lg"></div>
+                                <div class="cv-side-lines">
+                                    <div class="cv-line label-sm"></div>
+                                    <div class="cv-skill-bar"><div class="cv-skill-fill" style="width:90%"></div></div>
+                                    <div class="cv-skill-bar"><div class="cv-skill-fill" style="width:75%"></div></div>
+                                    <div class="cv-skill-bar"><div class="cv-skill-fill" style="width:85%"></div></div>
+                                    <div class="cv-line label-sm" style="margin-top:6px"></div>
+                                    <div class="cv-tag-row">
+                                        <div class="cv-tag"></div>
+                                        <div class="cv-tag"></div>
+                                        <div class="cv-tag"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="cv-divider"></div>
-                            <div class="cv-section">
+                            <div class="cv-main">
+                                <div class="cv-line thick"></div>
+                                <div class="cv-line medium"></div>
+                                <div class="cv-divider"></div>
                                 <div class="cv-line label"></div>
-                                <div class="cv-line full"></div>
-                                <div class="cv-line full"></div>
-                                <div class="cv-line half"></div>
-                            </div>
-                            <div class="cv-section">
-                                <div class="cv-line label"></div>
+                                <div class="cv-timeline">
+                                    <div class="cv-tl-item">
+                                        <div class="cv-tl-dot"></div>
+                                        <div class="cv-tl-content">
+                                            <div class="cv-line semi"></div>
+                                            <div class="cv-line short-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="cv-tl-item">
+                                        <div class="cv-tl-dot"></div>
+                                        <div class="cv-tl-content">
+                                            <div class="cv-line semi"></div>
+                                            <div class="cv-line short-sm"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cv-line label" style="margin-top:6px"></div>
                                 <div class="cv-bullet"><div class="cv-dot"></div><div class="cv-line three-q"></div></div>
                                 <div class="cv-bullet"><div class="cv-dot"></div><div class="cv-line half"></div></div>
-                                <div class="cv-bullet"><div class="cv-dot"></div><div class="cv-line full"></div></div>
                             </div>
                         </div>
                         <div class="portfolio-tag">ATS CV</div>
                     </div>
                     <div class="portfolio-info">
-                        <h4>Senior Software Engineer CV</h4>
-                        <p>ATS-optimized resume targeting UAE &amp; KSA tech roles — passed 12/12 ATS scans.</p>
+                        <div class="portfolio-meta">
+                            <span class="meta-role">💻 Software Engineer</span>
+                            <span class="meta-ats ats-pass">✓ ATS Passed</span>
+                        </div>
+                        <h4>Senior Software Engineer</h4>
+                        <p>Targeting UAE &amp; KSA tech roles. Passed 12/12 ATS scanners with 94% keyword match score.</p>
+                        <div class="portfolio-tags-row">
+                            <span class="ptag">Tech</span>
+                            <span class="ptag">UAE</span>
+                            <span class="ptag">KSA</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Website Sample -->
-                <div class="portfolio-card reveal">
+                <!-- ── CV 2: Marketing Manager ── -->
+                <div class="portfolio-card reveal" data-category="cv">
+                    <div class="portfolio-thumb cv-preview cv-teal">
+                        <div class="cv-mock cv-mock-full">
+                            <div class="cv-top-banner"></div>
+                            <div class="cv-body-split">
+                                <div class="cv-main cv-main-pad">
+                                    <div class="cv-avatar-inline"></div>
+                                    <div class="cv-line thick" style="margin-bottom:3px"></div>
+                                    <div class="cv-line medium"></div>
+                                    <div class="cv-divider"></div>
+                                    <div class="cv-line label"></div>
+                                    <div class="cv-metric-row">
+                                        <div class="cv-metric"><div class="cv-m-num"></div><div class="cv-m-label"></div></div>
+                                        <div class="cv-metric"><div class="cv-m-num"></div><div class="cv-m-label"></div></div>
+                                        <div class="cv-metric"><div class="cv-m-num"></div><div class="cv-m-label"></div></div>
+                                    </div>
+                                    <div class="cv-line label" style="margin-top:6px"></div>
+                                    <div class="cv-bullet"><div class="cv-dot teal-dot"></div><div class="cv-line full"></div></div>
+                                    <div class="cv-bullet"><div class="cv-dot teal-dot"></div><div class="cv-line three-q"></div></div>
+                                    <div class="cv-bullet"><div class="cv-dot teal-dot"></div><div class="cv-line half"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-tag">ATS CV</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-meta">
+                            <span class="meta-role">📣 Marketing</span>
+                            <span class="meta-ats ats-pass">✓ ATS Passed</span>
+                        </div>
+                        <h4>Marketing Manager</h4>
+                        <p>Achievement-driven format highlighting campaign ROI and growth metrics. Optimized for MENA market roles.</p>
+                        <div class="portfolio-tags-row">
+                            <span class="ptag">Marketing</span>
+                            <span class="ptag">MENA</span>
+                            <span class="ptag">ROI Focus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── CV 3: Business Analyst ── -->
+                <div class="portfolio-card reveal" data-category="cv">
+                    <div class="portfolio-thumb cv-preview cv-navy">
+                        <div class="cv-mock cv-mock-full">
+                            <div class="cv-main">
+                                <div class="cv-header-block">
+                                    <div class="cv-avatar-sq"></div>
+                                    <div class="cv-title-lines">
+                                        <div class="cv-line thick"></div>
+                                        <div class="cv-line medium"></div>
+                                        <div class="cv-contact-row">
+                                            <div class="cv-contact-item"></div>
+                                            <div class="cv-contact-item"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cv-divider"></div>
+                                <div class="cv-two-col">
+                                    <div class="cv-col">
+                                        <div class="cv-line label"></div>
+                                        <div class="cv-bullet"><div class="cv-dot navy-dot"></div><div class="cv-line three-q"></div></div>
+                                        <div class="cv-bullet"><div class="cv-dot navy-dot"></div><div class="cv-line half"></div></div>
+                                        <div class="cv-bullet"><div class="cv-dot navy-dot"></div><div class="cv-line full"></div></div>
+                                        <div class="cv-line label" style="margin-top:6px"></div>
+                                        <div class="cv-cert-badge"></div>
+                                        <div class="cv-cert-badge"></div>
+                                    </div>
+                                    <div class="cv-col">
+                                        <div class="cv-line label"></div>
+                                        <div class="cv-tl-item">
+                                            <div class="cv-tl-dot navy-tl"></div>
+                                            <div class="cv-tl-content">
+                                                <div class="cv-line semi"></div>
+                                                <div class="cv-line short-sm"></div>
+                                            </div>
+                                        </div>
+                                        <div class="cv-tl-item">
+                                            <div class="cv-tl-dot navy-tl"></div>
+                                            <div class="cv-tl-content">
+                                                <div class="cv-line semi"></div>
+                                                <div class="cv-line short-sm"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-tag">ATS CV</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <div class="portfolio-meta">
+                            <span class="meta-role">📊 Business Analyst</span>
+                            <span class="meta-ats ats-pass">✓ ATS Passed</span>
+                        </div>
+                        <h4>Business Analyst</h4>
+                        <p>Two-column format with certifications block. Targeting finance &amp; consulting firms in GCC.</p>
+                        <div class="portfolio-tags-row">
+                            <span class="ptag">Finance</span>
+                            <span class="ptag">GCC</span>
+                            <span class="ptag">Certified</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── Website Sample ── -->
+                <div class="portfolio-card reveal" data-category="website">
                     <div class="portfolio-thumb web-preview">
                         <div class="browser-mock">
                             <div class="browser-bar">
@@ -199,13 +342,21 @@
                         <div class="portfolio-tag">Website</div>
                     </div>
                     <div class="portfolio-info">
+                        <div class="portfolio-meta">
+                            <span class="meta-role">🌐 Web Dev</span>
+                        </div>
                         <h4>E-Commerce Business Platform</h4>
                         <p>Full business website with product catalog and integrated WhatsApp ordering system.</p>
+                        <div class="portfolio-tags-row">
+                            <span class="ptag">E-Commerce</span>
+                            <span class="ptag">WhatsApp</span>
+                            <span class="ptag">Mobile-first</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- AI Bot Sample -->
-                <div class="portfolio-card reveal">
+                <!-- ── AI Bot Sample ── -->
+                <div class="portfolio-card reveal" data-category="ai">
                     <div class="portfolio-thumb ai-preview">
                         <div class="chat-mock">
                             <div class="chat-header">
@@ -237,8 +388,16 @@
                         <div class="portfolio-tag">AI Bot</div>
                     </div>
                     <div class="portfolio-info">
+                        <div class="portfolio-meta">
+                            <span class="meta-role">🤖 Automation</span>
+                        </div>
                         <h4>WhatsApp Customer Support Bot</h4>
                         <p>Automated AI assistant handling 200+ daily inquiries with zero human input needed.</p>
+                        <div class="portfolio-tags-row">
+                            <span class="ptag">AI</span>
+                            <span class="ptag">WhatsApp</span>
+                            <span class="ptag">Automation</span>
+                        </div>
                     </div>
                 </div>
 

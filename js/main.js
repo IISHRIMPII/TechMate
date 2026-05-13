@@ -104,6 +104,26 @@ if (statsGrid) {
 }
 
 
+// --- Portfolio Filter Tabs ---
+const filterBtns  = document.querySelectorAll('.filter-btn');
+const portfolioCards = document.querySelectorAll('.portfolio-card[data-category]');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        portfolioCards.forEach(card => {
+            const match = filter === 'all' || card.getAttribute('data-category') === filter;
+            card.classList.toggle('hidden', !match);
+        });
+    });
+});
+
+
 // --- Active Nav Link on Scroll ---
 const sections = document.querySelectorAll('section[id]');
 
